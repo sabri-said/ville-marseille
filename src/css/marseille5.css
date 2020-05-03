@@ -1,0 +1,36 @@
+.bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 1;
+}
+
+.bg-filter {
+  filter: grayscale();
+  transition: 1s;
+}
+
+.bg-filter:hover {
+  filter: none;
+  flex: 6;
+}
+
+.bg-museum-mucem {
+  background-image: url("../images/museum_mucem.jpg");
+}
+
+.bg-museum-borely {
+  background-image: url("../images/museum_borely.jpg");
+}
+
+.bg-museum-longchamp {
+  background-image: url("../images/museum_longchamp.jpg");
+}
+
+.bg-museum-regards-provence {
+  background-image: url("../images/museum_regards_provence.jpg");
+}
+
+.bg-museum-vieille-charite {
+  background-image: url("../images/museum_vieille_charite.jpg");
+}
