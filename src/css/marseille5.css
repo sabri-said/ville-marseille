@@ -2,16 +2,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  flex: 1;
+  position: relative;
 }
 
 .bg-filter {
-  filter: grayscale();
-  transition: 1s;
+  transition: all 1s ease-in-out;
+  flex: 1;
 }
 
 .bg-filter:hover {
-  filter: none;
+  filter: grayscale();
   flex: 6;
 }
 
@@ -34,3 +34,34 @@
 .bg-museum-vieille-charite {
   background-image: url("../images/museum_vieille_charite.jpg");
 }
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--light);
+  position: absolute;
+  font-size: 8rem;
+  /* opacity: 0; */
+}
+
+.bg-filter:hover h1 {}
+
+/* @keyframes fadein {
+  0% {
+    opacity: 0%
+  }
+
+  100% {
+    opacity: 100%
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 100%
+  }
+
+  to {
+    opacity: 0%
+  }
+} */
