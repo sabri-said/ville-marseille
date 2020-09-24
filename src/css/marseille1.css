@@ -1,0 +1,24 @@
+.card-img-overlay > p {
+    left        : 0;
+    line-height : 2rem;
+    top         : 0;
+    visibility  : hidden;
+}
+
+.card-img-overlay {
+    background-color    : #0F0F0F;
+    opacity             : 0;
+    transition-duration : 500ms;
+}
+
+.card-img-overlay:hover p {
+    color      : var(--alpine-blue);
+    visibility : visible;
+}
+
+.card-img-overlay:hover {
+    opacity                    : 0.8;
+    transition-duration        : 500ms;
+    transition-property        : opacity;
+    transition-timing-function : ease-in-out;
+}
