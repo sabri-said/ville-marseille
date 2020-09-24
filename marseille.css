@@ -1,0 +1,30 @@
+body {
+    background-color: var(--alpine-blue);
+}
+
+h1.display-1.font-weight-bold.text-light {
+    z-index: 1;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    /*font-weight: lighter;*/
+}
+
+.actuality-main-tile {
+    color: var(--delta-green);
+}
+
+.jumbotron-overlay {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+/*BOOTSTRAP CUSTOM*/
+
+.jumbotron {
+    background-image: url("src/images/panorama_marseille_vieux_port_pharo_mucem.jpg");
+    height: 393px;
+}
