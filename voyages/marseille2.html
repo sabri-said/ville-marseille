@@ -5,14 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="../src/css/navbar.css">
     <link rel="stylesheet" href="../src/css/marseille2.css">
     <link rel="stylesheet" href="../src/css/main.css">
-    <title>Histoire</title>
+    <title>Randonnées</title>
 </head>
-<body>
+<body class="gjbody">
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light font-weight-normal">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -51,29 +51,87 @@
     </nav>
 </header>
 <main>
-    <section>
-        <article>
-            <section>
-                <h1>Luminy</h1>
-                <div id="slider">
+    <section class="gjsecrandos">
+        <article class="gjrandos">
+                <h1 class="card-title delta-green py-3">Luminy</h1>
+                <div class="gjhr"></div>
+                <div id="gjalign">
+                <div id="gjslider">
                     <figure>
-                        <a href="../src/images/luminy1.jpg"><img src="../src/images/luminy1.jpg" alt="1"></a>
-                        <a href="../src/images/luminy2.jpg"><img src="../src/images/luminy2.jpg" alt="2"></a>
-                        <a href="../src/images/luminy3.jpg"><img src="../src/images/luminy3.jpg" alt="3"></a>
-                        <a href="../src/images/luminy4.jpg"><img src="../src/images/luminy4.jpg" alt="4"></a>
-                        <a href="../src/images/luminy1.jpg"><img src="../src/images/luminy1.jpg" alt="1"></a>
+                        <a class="button" href="#popup1"><img class="gjimg" src="../src/images/luminy1.jpg" alt="1"></a>
+                        <div id="popup1" class="overlay">
+                            <div class="popup">
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <img src="../src/images/luminy1.jpg" alt="1">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="button" href="#popup2"><img class="gjimg" src="../src/images/luminy2.jpg" alt="2"></a>
+                        <div id="popup2" class="overlay">
+                            <div class="popup">
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <img src="../src/images/luminy2.jpg" alt="1">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="button" href="#popup3"><img class="gjimg" src="../src/images/luminy3.jpg" alt="3"></a>
+                        <div id="popup3" class="overlay">
+                            <div class="popup">
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <img src="../src/images/luminy3.jpg" alt="1">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="button" href="#popup4"><img class="gjimg" src="../src/images/luminy4.jpg" alt="4"></a>
+                        <div id="popup4" class="overlay">
+                            <div class="popup">
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <img src="../src/images/luminy4.jpg" alt="1">
+                                </div>
+                            </div>
+                        </div>
+                        <a href="../src/images/luminy1.jpg"><img class="gjimg" src="../src/images/luminy1.jpg" alt="1"></a>
+                        <div id="popup1" class="overlay">
+                            <div class="popup">
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <img src="../src/images/luminy1.jpg" alt="1">
+                                </div>
+                            </div>
+                        </div>
                     </figure>
                 </div>
-                <div id="txt">
+                <iframe id="gjmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36023.805555348394!2d5.421618157084106!3d43.2263325192092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9b900773f69d5%3A0xc107037259783b83!2sCit%C3%A9%20universitaire%20Luminy!5e0!3m2!1sfr!2sfr!4v1601182848650!5m2!1sfr!2sfr" width="500" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            
+            </div>        
+                <div id="gjtxt">
                 <p>
-                    À quelques encâblures de Marseille sur la Méditerranée, les îles Ratonneau, Pomègues et If forment l’archipel du Frioul. Le fantôme du comte de Monte-Cristo, son plus célèbre prisonnier, se profile derrière les puissantes tours du château d’If. « Cette forteresse qui fait vivre depuis trois cents ans Marseille de ses lugubres traditions... » s’exclamait Edmond Dantès en l’apercevant. Les îles Pomègues et Ratonneau, autrefois militaires, sont liées entre elles par une digue.
+                    Le quartier de Luminy se situe dans une zone boisée au Sud-Est de Marseille (9ème arrondissement). 
+                    Un peu isolé du reste de la ville, Luminy est bordé par le Mont Puget (563m) et la crête des Escampons. 
+                    Surtout connu pour son centre universitaire et ses nombreuses écoles (8000 étudiants en tout), 
+                    Luminy est le point de départ idéal pour rejoindre en moins d'une heure les calanques de Sugiton et Morgiou 
+                    mais aussi pour découvrir le Belvédère de la Tour d'Orient ou encore partir en randonnée vers la grande Candelle 
+                    et le Mont Puget. En face du centre universitaire se trouve un grand parking où l'on peut laisser sa voiture 
+                    avant d'emprunter le chemin principal qui débute au niveau de l'école d'art et d'architecture. 
+                    On y trouve aussi une fontaine pour les marcheurs et 2 snacks pour se restaurer.                
                 </p>
-                <p>
-                    Depuis le port du Frioul sur l’île Ratonneau, rejoindre à l’est le cap de Croix et revenir le long de l’ancien hôpital Caroline, où les malades et autres pestiférés étaient tenus autrefois en quarantaine. Traverser la digue et continuer sur l’île Pomègues jusqu’à la tour de Pomèguet. Continuer, si bon vous semble, jusqu’au cap Caveau et revenir par le même sentier. Pique-niques agréables dans de petites criques avec vues remarquables sur Marseille.
-                </p>
+                <button type="button" class="btn btn-light">
+                    <a href="https://www.visorando.com/randonnee-boucle-des-calanques-au-depart-de-luminy/">En savoir plus</a>
+                </button>
                 </div>
-            </section>
-        </article>
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <h2>Here i am</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                            Thank to pop me out of that button, but now i'm done so you can close this window.
+                        </div>
+                    </div>
+                </div>
+            </article>
         <aside>
                 
         </aside>
