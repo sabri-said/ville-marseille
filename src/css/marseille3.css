@@ -1,0 +1,42 @@
+#gjparc {
+    display: flex;
+    align-items: center;
+}
+
+#gjparc p {
+    margin: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.gjlogo {
+    width: 10%;
+}
+
+#gjlogo {
+    float: initial;    
+}
+
+#gjlogo2 {
+    float: right;
+    transform: scaleX(-1);
+}
+
+.gjarticle {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+.gjarticled {
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+    padding: 2rem 0 1rem 0;
+    background-color: rgb(169, 169, 169, 0.3);
+}
+
+.gjinvers {
+    flex-direction: row-reverse;
+}
