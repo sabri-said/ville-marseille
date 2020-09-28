@@ -2,15 +2,17 @@
 
 .gjbody { 
     margin: 0; 
+    padding: 0;
 }
 
-div#gjslider { 
+div.gjslider { 
     overflow: hidden;
     width: 500px;
     height: auto;
     border: 1px transparent rgba(0,0,0,.5);
     border-radius: 1rem;
     margin: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
 .gjimg { 
@@ -18,7 +20,7 @@ div#gjslider {
     float: left; 
 }
 
-div#gjslider figure { 
+div.gjslider figure {
   position: relative;
   width: 500%;
   margin: 0;
@@ -59,17 +61,6 @@ div#gjslider figure {
 }
 
 /* POPUP */
-
-/* .box {
-    width: 40%;
-    margin: 0 auto;
-    background: rgba(255,255,255,0.2);
-    padding: 35px;
-    border: 2px solid #fff;
-    border-radius: 20px/50px;
-    background-clip: padding-box;
-    text-align: center;
-  } */
   
   .button {
     font-size: 1em;
@@ -143,6 +134,8 @@ div#gjslider figure {
 
 .gjsecrandos {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .gjrandos {
@@ -154,7 +147,7 @@ div#gjslider figure {
     text-align: center;
 }
 
-#gjalign {
+.gjalign {
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -163,7 +156,7 @@ div#gjslider figure {
     margin: 2rem;
 }
 
-#gjtxt {
+.gjtxt {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,11 +165,34 @@ div#gjslider figure {
     margin-right: 3rem ;
 }
 
-#gjtxt p {
+.gjtxt p {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.gjtxt button {
+    width: fit-content;
+}
+
+.gjhr {
+    border: dotted rgb(156, 156, 156) 1px;
     width: 75%;
     margin: auto;
 }
 
-#gjtxt button {
-    width: fit-content;
+.gjmap, .gjbutton {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.gjbutton {
+    margin-bottom: 2rem;
+}
+
+.gjbutton a {
+    text-decoration: none;
+}
+
+#gjtxtmars {
+    
 }

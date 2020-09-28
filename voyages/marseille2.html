@@ -1,163 +1,502 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="../src/css/navbar.css">
     <link rel="stylesheet" href="../src/css/marseille2.css">
     <link rel="stylesheet" href="../src/css/main.css">
     <title>Randonnées</title>
 </head>
-<body class="gjbody">
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light font-weight-normal">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav w-100 d-flex justify-content-around align-items-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="../voyages.html">Accueil<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="marseille1.html">Histoire</a>
-                </li>
-                <li>
-                    <a class="navbar-brand" href="../voyages.html"> <img src="../src/images/marseille_logo.png"
-                                                                         alt="marseille logo" class="marseille-logo">
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Activités </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="marseille2.html">Randonées</a>
-                        <a class="dropdown-item" href="marseille3.html">Parcs</a>
-                        <a class="dropdown-item" href="marseille4.html">Plages</a>
-                        <a class="dropdown-item" href="marseille5.html">Musées</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="marseille6.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
-<main>
-    <section class="gjsecrandos">
-        <article class="gjrandos">
-                <h1 class="card-title delta-green py-3">Luminy</h1>
+<body class="gjbody">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light font-weight-normal">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex justify-content-around align-items-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../voyages.html">Accueil<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="marseille1.html">Histoire</a>
+                    </li>
+                    <li>
+                        <a class="navbar-brand" href="../voyages.html"> <img src="../src/images/marseille_logo.png"
+                                alt="marseille logo" class="marseille-logo">
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Activités </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="marseille2.html">Randonées</a>
+                            <a class="dropdown-item" href="marseille3.html">Parcs</a>
+                            <a class="dropdown-item" href="marseille4.html">Plages</a>
+                            <a class="dropdown-item" href="marseille5.html">Musées</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="marseille6.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="gjsecrandos">
+            <article class="gjrandos">
+                <h1 class="card-title delta-green py-3" id="luminy">Luminy</h1>
                 <div class="gjhr"></div>
-                <div id="gjalign">
-                <div id="gjslider">
-                    <figure>
-                        <a class="button" href="#popup1"><img class="gjimg" src="../src/images/luminy1.jpg" alt="1"></a>
-                        <div id="popup1" class="overlay">
-                            <div class="popup">
-                                <a class="close" href="#">&times;</a>
-                                <div class="content">
-                                    <img src="../src/images/luminy1.jpg" alt="1">
+                <div class="gjalign">
+                    <div class="gjslider">
+                        <figure>
+                            <a class="button" href="#popup1"><img class="gjimg" src="../src/images/luminy1.jpg"
+                                    alt="1"></a>
+                            <div id="popup1" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#luminy">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/luminy1.jpg" alt="1">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <a class="button" href="#popup2"><img class="gjimg" src="../src/images/luminy2.jpg" alt="2"></a>
-                        <div id="popup2" class="overlay">
-                            <div class="popup">
-                                <a class="close" href="#">&times;</a>
-                                <div class="content">
-                                    <img src="../src/images/luminy2.jpg" alt="1">
+                            <a class="button" href="#popup2"><img class="gjimg" src="../src/images/luminy2.jpg"
+                                    alt="2"></a>
+                            <div id="popup2" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#luminy">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/luminy2.jpg" alt="1">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <a class="button" href="#popup3"><img class="gjimg" src="../src/images/luminy3.jpg" alt="3"></a>
-                        <div id="popup3" class="overlay">
-                            <div class="popup">
-                                <a class="close" href="#">&times;</a>
-                                <div class="content">
-                                    <img src="../src/images/luminy3.jpg" alt="1">
+                            <a class="button" href="#popup3"><img class="gjimg" src="../src/images/luminy3.jpg"
+                                    alt="3"></a>
+                            <div id="popup3" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#luminy">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/luminy3.jpg" alt="1">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <a class="button" href="#popup4"><img class="gjimg" src="../src/images/luminy4.jpg" alt="4"></a>
-                        <div id="popup4" class="overlay">
-                            <div class="popup">
-                                <a class="close" href="#">&times;</a>
-                                <div class="content">
-                                    <img src="../src/images/luminy4.jpg" alt="1">
+                            <a class="button" href="#popup4"><img class="gjimg" src="../src/images/luminy4.jpg"
+                                    alt="4"></a>
+                            <div id="popup4" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#luminy">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/luminy4.jpg" alt="1">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <a href="../src/images/luminy1.jpg"><img class="gjimg" src="../src/images/luminy1.jpg" alt="1"></a>
-                        <div id="popup1" class="overlay">
-                            <div class="popup">
-                                <a class="close" href="#">&times;</a>
-                                <div class="content">
-                                    <img src="../src/images/luminy1.jpg" alt="1">
+                            <a class="button" href="#popup1"><img class="gjimg" src="../src/images/luminy1.jpg"
+                                    alt="1"></a>
+                            <div id="popup1" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#luminy">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/luminy1.jpg" alt="1">
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </figure>
-                </div>
-                <iframe id="gjmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36023.805555348394!2d5.421618157084106!3d43.2263325192092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9b900773f69d5%3A0xc107037259783b83!2sCit%C3%A9%20universitaire%20Luminy!5e0!3m2!1sfr!2sfr!4v1601182848650!5m2!1sfr!2sfr" width="500" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            
-            </div>        
-                <div id="gjtxt">
-                <p>
-                    Le quartier de Luminy se situe dans une zone boisée au Sud-Est de Marseille (9ème arrondissement). 
-                    Un peu isolé du reste de la ville, Luminy est bordé par le Mont Puget (563m) et la crête des Escampons. 
-                    Surtout connu pour son centre universitaire et ses nombreuses écoles (8000 étudiants en tout), 
-                    Luminy est le point de départ idéal pour rejoindre en moins d'une heure les calanques de Sugiton et Morgiou 
-                    mais aussi pour découvrir le Belvédère de la Tour d'Orient ou encore partir en randonnée vers la grande Candelle 
-                    et le Mont Puget. En face du centre universitaire se trouve un grand parking où l'on peut laisser sa voiture 
-                    avant d'emprunter le chemin principal qui débute au niveau de l'école d'art et d'architecture. 
-                    On y trouve aussi une fontaine pour les marcheurs et 2 snacks pour se restaurer.                
-                </p>
-                <button type="button" class="btn btn-light">
-                    <a href="https://www.visorando.com/randonnee-boucle-des-calanques-au-depart-de-luminy/">En savoir plus</a>
-                </button>
-                </div>
-                <div id="popup1" class="overlay">
-                    <div class="popup">
-                        <h2>Here i am</h2>
-                        <a class="close" href="#">&times;</a>
-                        <div class="content">
-                            Thank to pop me out of that button, but now i'm done so you can close this window.
-                        </div>
+                        </figure>
                     </div>
+
+                    <iframe class="gjmap"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36023.805555348394!2d5.421618157084106!3d43.2263325192092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9b900773f69d5%3A0xc107037259783b83!2sCit%C3%A9%20universitaire%20Luminy!5e0!3m2!1sfr!2sfr!4v1601182848650!5m2!1sfr!2sfr"
+                        width="500" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="gjtxt">
+                    <h3>Sur les hauteurs</h3>
+                    <p>
+                        Le quartier de Luminy se situe dans une zone boisée au Sud-Est de Marseille (9ème
+                        arrondissement).
+                        Un peu isolé du reste de la ville, Luminy est bordé par le Mont Puget (563m) et la crête des
+                        Escampons.
+                        Surtout connu pour son centre universitaire et ses nombreuses écoles (8000 étudiants en tout),
+                        Luminy est le point de départ idéal pour rejoindre en moins d'une heure les calanques de Sugiton
+                        et Morgiou
+                        mais aussi pour découvrir le Belvédère de la Tour d'Orient ou encore partir en randonnée vers la
+                        grande Candelle
+                        et le Mont Puget. En face du centre universitaire se trouve un grand parking où l'on peut
+                        laisser sa voiture
+                        avant d'emprunter le chemin principal qui débute au niveau de l'école d'art et d'architecture.
+                        On y trouve aussi une fontaine pour les marcheurs et 2 snacks pour se restaurer.
+                    </p>
+                    <button type="button" class="gjbutton btn btn-light">
+                        <a href="https://www.visorando.com/randonnee-boucle-des-calanques-au-depart-de-luminy/">En
+                            savoir plus</a>
+                    </button>
                 </div>
             </article>
-        <aside>
-                
-        </aside>
-        <article>
-            
-        </article>
-        <aside>
-                
-        </aside>
-        <article>
-            
-        </article>
-        <aside>
-                
-        </aside>
-    </section>
-</main>
-<footer>
+            <article class="gjrandos">
+                <h1 class="card-title delta-green py-3" id="frioul">Le Frioul</h1>
+                <div class="gjhr"></div>
+                <div class="gjalign">
+                    <div class="gjslider">
+                        <figure>
+                            <a class="button" href="#popup1"><img class="gjimg" src="../src/images/frioul1.jpg"
+                                    alt="1"></a>
+                            <div id="popup1" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#frioul">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/frioul1.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="button" href="#popup2"><img class="gjimg" src="../src/images/frioul2.jpg"
+                                    alt="2"></a>
+                            <div id="popup2" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#frioul">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/frioul2.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="button" href="#popup3"><img class="gjimg" src="../src/images/frioul3.jpg"
+                                    alt="3"></a>
+                            <div id="popup3" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#frioul">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/frioul3.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="button" href="#popup4"><img class="gjimg" src="../src/images/frioul4.jpg"
+                                    alt="4"></a>
+                            <div id="popup4" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#frioul">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/frioul4.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="button" href="#popup1"><img class="gjimg" src="../src/images/frioul1.jpg"
+                                    alt="1"></a>
+                            <div id="popup1" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#frioul">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/frioul1.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <iframe class="gjmap"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22544.08057519975!2d5.293019730715025!3d43.277072600509186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c404bad38633%3A0x310bcd5b882a54e1!2s%C3%8Eles%20du%20Frioul!5e0!3m2!1sfr!2sfr!4v1601229843878!5m2!1sfr!2sfr"
+                        width="500" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="gjtxt">
+                    <h3>Balade autour de l'ile</h3>
+                    <p>
+                        La balade sur les îles de l’archipel du Frioul va vous étonner par son caractère
+                        exceptionnel ! Vous cheminerez sur cet ensemble calcaire, d’un blanc éclatant, posé sur les
+                        eaux bleues de la Méditerranée. Vous passerez devant les nombreuses plages, criques
+                        sablonneuses et calanques et vous pourrez admirer le relief tourmenté des îles, dessiné par
+                        le mistral.
 
-</footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                        Le microclimat aride du site fait la singularité de sa faune et de sa flore insulaires. Les
+                        îles du Frioul abritent une flore qui a su s’adapter au climat, au sol peu profond et au sel
+                        distillé par les embruns. Lors de la rando nature vous pourrez observer la Rue à feuilles
+                        étroites et l’Orpin du littoral ! L’archipel est aussi un site majeur pour la reproduction
+                        des oiseaux marins méditerranéens. Le long de la balade vous verrez certainement le Puffin
+                        cendré, le Monticole merle-bleu et bien sûr le Goéland leucophée, que les marseillais
+                        appellent communément le Gabian !
+                        Cette randonnée est riche en découvertes autant pour sa biodiversité exceptionnelle que pour
+                        ces paysages escarpés ! L’Archipel du Frioul offre un contraste saisissant, un parfum de
+                        bout du monde !
+                    </p>
+                    <p>
+                        Présentation de l’Archipel du Frioul :<br>
+                        Au cœur de la rade de Marseille, face à la ville, l’archipel du Frioul est composé de quatre
+                        îles : Pomègues et Ratonneau, l’île d’If qui abrite le célèbre château d’If, et l’îlot
+                        Tiboulen.
+                        Le Frioul a toujours joué un rôle stratégique. Pendant plusieurs siècles, le Frioul a été
+                        occupé militairement et a servi à défendre ou surveiller la ville de Marseille. Des témoins
+                        de l’activité militaire sont encore visibles, tels que les forts érigés sous Henri IV ou les
+                        bunkers de la Seconde Guerre mondiale.
+                        De tout temps, les îles du Frioul ont servi d’escales pour les marins de Méditerranée,
+                        qu’ils soient guerriers ou aventuriers. Plus tard, leur fonction sanitaire joua un grand
+                        rôle dans la protection de Marseille. Des vestiges sont encore visibles comme l’Hôpital
+                        Caroline et le Port de Quarantaine. L’Hôpital Caroline, sur l’île de Ratonneau, a été
+                        utilisé pour soigner les malades atteints de la fièvre jaune.
+
+                        La balade sur l’archipel du Frioul est aussi l’occasion de découvrir son port de plaisance
+                        et la ferme aquacole, située sur l’île de Pomègues, élevant des loups (bars) et qui a été
+                        reconnue première ferme biologique mondiale.
+
+                        L’archipel du Frioul est désormais sous la protection du Parc national des Calanques et
+                        reste un lieu préservé. Une rencontre étonnante et authentique en Méditerranée !
+                    </p>
+                    <button type="button" class="gjbutton btn btn-light">
+                        <a
+                            href="https://www.visorando.com/randonnee-archipel-du-frioul-ile-du-ratonneau/#:~:text=Description%20de%20la%20randonn%C3%A9e,sur%20la%20Calanque%20de%20Morgiret.">En
+                            savoir plus</a>
+                    </button>
+                </div>
+            </article>
+            <article class="gjrandos">
+                <h1 class="card-title delta-green py-3" id="gjlevieux">Le vieux Marseille</h1>
+                <div class="gjhr"></div>
+                <div class="gjalign">
+                    <div class="gjslider">
+                        <figure>
+                            <a class="button" href="#popup1"><img class="gjimg"
+                                    src="../src/images/levieuxmarseille1.jpg" alt="1"></a>
+                            <div id="popup1" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#gjlevieux">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/levieuxmarseille1.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="button" href="#popup2"><img class="gjimg"
+                                    src="../src/images/levieuxmarseille2.jpg" alt="2"></a>
+                            <div id="popup2" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#gjlevieux">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/levieuxmarseille2.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="button" href="#popup3"><img class="gjimg"
+                                    src="../src/images/levieuxmarseille3.jpg" alt="3"></a>
+                            <div id="popup3" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#gjlevieux">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/levieuxmarseille3.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="button" href="#popup4"><img class="gjimg"
+                                    src="../src/images/levieuxmarseille4.jpg" alt="4"></a>
+                            <div id="popup4" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#gjlevieux">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/levieuxmarseille4.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#popup1"><img class="gjimg" src="../src/images/levieuxmarseille1.jpg" alt="1"></a>
+                            <div id="popup1" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#gjlevieux">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/levieuxmarseille1.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5807.646175793964!2d5.363225474485733!3d43.2970264165403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0ea721da007%3A0x3d51b13f8a831306!2sH%C3%B4tel%20de%20Ville%2C%2013002%20Marseille!5e0!3m2!1sfr!2sfr!4v1601234098365!5m2!1sfr!2sfr"
+                        width="500" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="gjtxt" id="gjtxtmars">
+                    <h3>Balade dans le Panier</h3>
+
+                    <p>Peu étendu, Le Panier se parcourt à pied, le nez
+                        au vent, en quête de parfums et de sensations. Ce n'est plus le coupe-gorge où le
+                        Marseillais, pourtant brave, n'osait pas mettre les pieds ! Au contraire, l'antique
+                        Massalia ne cesse d'être réhabilitée depuis vingt ans. Désormais, les
+                        crépis ocre fleurissent sur les façades, les artisans reviennent s'y installer, et les
+                        écrivains de polar marseillais - Del Pappas et
+                        Carrese, entre autres - en font le cadre de leurs aventures...</p>
+
+                    <p>Pour rejoindre la butte, faites comme les Grecs de Phocée arrivés il y a 2
+                        600 ans : partez du quai du Port, face à la mairie. D'inspiration
+                        baroque, ce petit pavillon évoque certains
+                        palais de la côte italienne comme à Gênes.
+                        À gauche, voici l'un des plus beaux exemples du Marseille
+                        de la reconstruction : les immeubles de l'architecte Pouillon, tout
+                        habillés de belle pierre jaune du pont du Gard.
+                        Longez ensuite la mairie en suivant la rue de la Prison. Vous passerez
+                        devant un beau palais civil du 16e s., la maison Diamantée dont la façade
+                        est taillée en pointes de
+                        diamants.</p>
+
+                    <p>La rue de la Prison débouche sur la rue Caisserie, la plus
+                        ancienne du Panier. À voir, le balcon en
+                        ferronnerie de l'Hôtel Daviel, ancien palais de
+                        justice (1743) orné de panneaux dits « à la marguerite », qui était le motif
+                        favori des artisans marseillais au 18e s. Vous pouvez également pousser la
+                        visite jusqu’à l'Hôtel-Dieu, réputé pour ses
+                        trois étages de galeries circulaires à arcades. À proximité, le clocher des Accoules est le
+                        vestige de l'une des plus anciennes
+                        églises de Marseille.
+                    </p>
+
+                    <p>Revenez alors sur vos pas et attaquez l'ascension du Panier par la mythique montée
+                        des Accoules qui a
+                        valu au quartier sa réputation de « village pour les chèvres » tant cela grimpe. À
+                        droite, la rue Poirier serpente sous les cordes à linge comme à Naples. Un
+                        peu plus loin, le
+                        préau des Accoules est un ancien collège jésuite du 18e s.
+                        Rejoignez la place de Lenche, une jolie
+                        placette ensoleillée qui offre une belle vue sur les eaux scintillantes du Vieux-Port.
+                        Suivez ensuite la rue de
+                        l'Évêché jusqu'à la place des Treize Cantons d'où l'on
+                        aperçoit l'énorme coupole néo-byzantine de la nouvelle Major. Celle-ci abrite des lieux
+                        emblématiques de la vie
+                        du quartier, comme le fameux bar des Treize Coins, et la non moins fameuse
+                        Chocolatière du Panier. De là, remontez la rue du Panier
+                        sur 100 mètres.</p>
+
+                    <p>Vous déboucherez, entre les rues Rodillat et Pistoles, sur
+                        la Vieille Charité, le joyau architectural de Marseille.
+                        Édifié entre 1671 et 1749 pour soigner les miséreux de la ville, cet ancien hospice est
+                        l'œuvre des frères Puget. Admirez la chapelle et son dôme ovoïde, véritable
+                        déclaration d'amour au baroque italien. Le lieu, havre de paix et de silence, regroupe de
+                        nombreux musées (notamment, le Musée d'archéologie
+                        méditerranéenne et le Musée d'Arts
+                        africains, océaniens et amérindiens).</p>
+
+                    <p>Pour finir, descendez la rue de Lorette. Deux cents mètres plus bas, le
+                        contraste est brutal. Exit le village méditerranéen aux venelles suspendues, bienvenue dans
+                        la ville haussmannienne avec la grande artère bruyante de la rue de la
+                        République qui descend jusqu'au Vieux-Port…</p>
+                    <button type="button" class="gjbutton btn btn-light">
+                        <a href="https://www.visorando.com/randonnee-visite-des-vieux-quartiers-de-marseille/">En
+                            savoir plus</a>
+                    </button>
+                </div>
+            </article>
+            <article class="gjrandos">
+                <h1 class="card-title delta-green py-3" id="gjcorniche">La corniche</h1>
+                <div class="gjhr"></div>
+                <div class="gjalign">
+                    <div class="gjslider">
+                        <figure>
+                            <a class="button" href="#popup1"><img class="gjimg" src="../src/images/corniche1.jpg"
+                                    alt="1"></a>
+                            <div id="popup1" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#gjcorniche">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/corniche1.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="button" href="#popup2"><img class="gjimg" src="../src/images/corniche2.jpg"
+                                    alt="2"></a>
+                            <div id="popup2" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#gjcorniche">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/corniche2.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="button" href="#popup3"><img class="gjimg" src="../src/images/corniche3.jpg"
+                                    alt="3"></a>
+                            <div id="popup3" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#gjcorniche">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/corniche3.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="button" href="#popup4"><img class="gjimg" src="../src/images/corniche4.jpg"
+                                    alt="4"></a>
+                            <div id="popup4" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#gjcorniche">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/corniche4.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#popup1"><img class="gjimg" src="../src/images/corniche1.jpg" alt="1"></a>
+                            <div id="popup1" class="overlay">
+                                <div class="popup">
+                                    <a class="close" href="#gjcorniche">&times;</a>
+                                    <div class="content">
+                                        <img src="../src/images/corniche1.jpg" alt="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7404.715212058816!2d5.3533236128463075!3d43.2763231726148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c72d09c3a52b%3A0x4da428b6638f153b!2sCorniche%20Pr%C3%A9sident%20John%20Fitzgerald%20Kennedy%2C%20Marseille!5e0!3m2!1sfr!2sfr!4v1601304051954!5m2!1sfr!2sfr"
+                        width="500" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="gjtxt">
+                    <h3>Le littoral</h3>
+                    <p>
+                        En longeant la Corniche Kennedy, qui part de la Plage des Catalans, elle vous mènera jusqu’au
+                        Prado. La Corniche de Marseille doit son nom en hommage au Président des États-Unis alors
+                        récemment assassiné. Saviez-vous que le long de la corniche se trouve le banc le plus long du
+                        monde ? Ses 3km de longueur vous laisseront largement de quoi trouver une place et observer la
+                        vue magnifique sur les îles du Frioul. Vous trouverez le long de la Corniche de nombreux
+                        restaurants avec des vues toutes plus belles que les autres
+                    </p>
+
+                    <h4>Les plages du Prados</h4>
+                    <p>Au bout de la Corniche, se trouve les plages du Prado. Endroits parfaits pour se détendre,
+                        pique-niquer ou encore profiter des restaurants sur la plage très agréables en toute saison !
+                    </p>
+
+                    <h4>Le Vallon de Auffres</h4>
+
+                    <p>
+                        C’est un petit port de pêche qui a su rester traditionnel. Le Vallon de Auffres abrite des
+                        restaurants, comme le célèbre Chez Fonfon, dans un cadre magnifique et tranquille. Vous y
+                        accéderez depuis la Corniche Kennedy, entre la plage des Catalans et l’anse de Malmousque. Vous
+                        ne pourrez pas rater ce petit bijou !
+                    </p>
+
+
+                    <h4>7e arrondissement</h4>
+                    <p>
+                        Attention de bonnes chaussures de marche sont de rigueur pour arpenter la montée des Croquants
+                        ou encore le Chemin du Roucas Blanc. Le quartier est très agréable pour se promener à Marseille.
+                        Pour les plus motivés, vous pouvez monter tout en haut de la colline, et admirer le paysage de
+                        Marseille depuis Notre Dame de la Garde.
+                    </p>
+                    <button type="button" class="gjbutton btn btn-light">
+                        <a href="https://www.visorando.com/randonnee-la-corniche-de-marseille-notre-dame-de-l/">En
+                            savoir plus</a>
+                    </button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
