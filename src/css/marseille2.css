@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-div.gjslider { 
+.gjslider { 
     overflow: hidden;
     width: 500px;
     height: auto;
@@ -20,7 +20,7 @@ div.gjslider {
     float: left; 
 }
 
-div.gjslider figure {
+.gjfigure {
   position: relative;
   width: 500%;
   margin: 0;
@@ -169,6 +169,7 @@ div.gjslider figure {
     display: flex;
     justify-content: space-between;
     width: 75%;
+    text-align: justify;
 }
 
 .gjtxt button {
