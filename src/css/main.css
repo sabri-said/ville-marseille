@@ -1,188 +1,217 @@
 /*TYPOGRAPHY*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
 
 :root {
     /*COLORS SHEME*/
-    --dark: #1A1A1A;
-    --light: #EBEBEB;
-    --sand: #D8D3D0;
-    --alpine-blue: #DAE4E5;
-    --chuff-blue: #94C0C2;
-    --cadet-blue: #69A4A2;
-    --magnetic-green: #296E6B;
-    --delta-green: #2B4A4A;
-    --gold-metallic: #FAECB7;
-    --lemon-curry: #FFE699;
-    --dark-goldenrod: #FBD574;
-    --jet: #333333;
-    --eerie-black: #1C1C1C;
-    --rich-black-fogra: #0A0A0A;
+    --dark                : #1A1A1A;
+    --jet                 : #333333;
+    --light               : #EBEBEB;
+    --sand                : #D8D3D0;
+    --out-back            : cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    --eerie-black         : #1C1C1C;
+    --rich-black-fogra    : #0A0A0A;
+    --alpine-blue         : #DAE4E5;
+    --cadet-blue          : #69A4A2;
+    --chuff-blue          : #94C0C2;
+    --lemon-curry         : #FFE699;
+    --dark-goldenrod      : #FBD574;
+    --delta-green         : #2B4A4A;
+    --magnetic-green      : #296E6B;
     /*OVERLAY COLOR SCHEME*/
-    --opacity-super-high: .92;
-    --opacity-high: .75;
-    --opacity-medium: .50;
-    --opacity-light: .25;
-    --opacity-super-light: .125;
+    --opacity-high        : .75;
+    --opacity-light       : .25;
+    --shadow-light        : 0px 0 50px -15px #4D4D4D;
+    --opacity-medium      : .50;
+    --gold-metallic       : #FAECB7;
     /* TRANSITION CURVES */
-    --out-back: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    --opacity-super-high  : .92;
     /*BOX SHADOW*/
-    --shadow-light: 0px 0 50px -15px #4d4d4d;
+    --opacity-super-light : .125;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    /*font-family : 'Major Mono Display', sans-serif;*/
+    overflow-x  : hidden;
 }
 
 .oswald {
-    font-family: 'Oswald', sans-serif;
+    font-family : 'Oswald', sans-serif;
+}
+
+.major-mono {
+    font-family : 'Major Mono Display', sans-serif;
+}
+
+.raleway {
+    font-family : 'Raleway', sans-serif;
+}
+
+.jumbotron-overlay {
+    background-color : black;
+    height           : 100%;
+    left             : 0;
+    opacity          : 0.4;
+    top              : 0;
+    width            : 100%;
+}
+
+.obj-fit-cover {
+    object-fit : cover;
+}
+
+.obj-fit-cover-bt {
+    object-fit      : cover;
+    object-position : bottom;
 }
 
 /* COLORS */
 .black {
-    color: black;
+    color : black;
 }
 
 .white {
-    color: white;
+    color : white;
 }
 
 .dark {
-    color: var(--dark);
+    color : var(--dark);
 }
 
 .light {
-    color: var(--light);
+    color : var(--light);
 }
 
 .sand {
-    color: var(--sand);
+    color : var(--sand);
 }
 
 .alpine-blue {
-    color: var(--alpine-blue);
+    color : var(--alpine-blue);
 }
 
 .chuff-blue {
-    color: var(--chuff-blue);
+    color : var(--chuff-blue);
 }
 
 .cadet-blue {
-    color: var(--cadet-blue);
+    color : var(--cadet-blue);
 }
 
 .magnetic-green {
-    color: var(--magnetic-green);
+    color : var(--magnetic-green);
 }
 
 .delta-green {
-    color: var(--delta-green);
+    color : var(--delta-green);
 }
 
 .gold-metallic {
-    color: var(--gold-metallic);
+    color : var(--gold-metallic);
 }
 
 .lemon-curry {
-    color: var(--lemon-curry);
+    color : var(--lemon-curry);
 }
 
 .dark-goldenrod {
-    color: var(--dark-goldenrod);
+    color : var(--dark-goldenrod);
 }
 
 .jet {
-    color: var(--jet);
+    color : var(--jet);
 }
 
 .eerie-black {
-    color: var(--eerie-black);
+    color : var(--eerie-black);
 }
 
 .rich-black-fogra {
-    color: var(--rich-black-fogra);
+    color : var(--rich-black-fogra);
 }
 
 /* BACKGROUNDS */
 /*BASIC COLOR*/
 .bg-black {
-    background-color: black;
+    background-color : black;
 }
 
 .bg-white {
-    background-color: white;
+    background-color : white;
 }
 
 .bg-dark {
-    background-color: var(--dark);
+    background-color : var(--dark);
 }
 
 .bg-light {
-    background-color: var(--light);
+    background-color : var(--light);
 }
 
 /*ALPINE THEME*/
 .bg-sand {
-    background-color: var(--sand);
+    background-color : var(--sand);
 }
 
 .bg-alpine-blue {
-    background-color: var(--alpine-blue);
+    background-color : var(--alpine-blue);
 }
 
 .bg-chuff-blue {
-    background-color: var(--chuff-blue);
+    background-color : var(--chuff-blue);
 }
 
 .bg-cadet-blue {
-    background-color: var(--cadet-blue);
+    background-color : var(--cadet-blue);
 }
 
 .bg-magnetic-green {
-    background-color: var(--magnetic-green);
+    background-color : var(--magnetic-green);
 }
 
 .bg-delta-green {
-    background-color: var(--delta-green);
+    background-color : var(--delta-green);
 }
 
 /*DARK & GOLD THEME*/
 .bg-gold-metallic {
-    background-color: var(--gold-metallic);
+    background-color : var(--gold-metallic);
 }
 
 .bg-lemon-curry {
-    background-color: var(--lemon-curry);
+    background-color : var(--lemon-curry);
 }
 
 .bg-dark-goldenrod {
-    background-color: var(--dark-goldenrod);
+    background-color : var(--dark-goldenrod);
 }
 
 .bg-jet {
-    background-color: var(--jet);
+    background-color : var(--jet);
 }
 
 .bg-eerie-black {
-    background-color: var(--eerie-black);
+    background-color : var(--eerie-black);
 }
 
 .bg-rich-black-fogra {
-    background-color: var(--rich-black-fogra);
+    background-color : var(--rich-black-fogra);
 }
 
 /*COLOR OVERLAY*/
 .bg-light-overlay-light {
-    background-color: rgba(235, 235, 235, 0.45);
+    background-color : rgba(235, 235, 235, 0.45);
 }
 
 .bg-light-overlay-medium {
-    background-color: rgba(235, 235, 235, 0.75);
+    background-color : rgba(235, 235, 235, 0.75);
 }
 
 /*SHADOW*/
 .box-shadow-light {
-    box-shadow: var(--shadow-light);
+    box-shadow : var(--shadow-light);
 }
 
 /*GENERAL MARKUP LAYOUT*/
@@ -191,90 +220,90 @@ body {
 
 /*BORDER UTILITIES*/
 .no-border {
-    border: 0;
+    border : 0;
 }
 
 .rounded {
-    border-radius: 50%;
+    border-radius : 50%;
 }
 
 .b-radius-1 {
-    border-radius: 1rem
+    border-radius : 1rem
 }
 
 .b-radius-2 {
-    border-radius: 2rem
+    border-radius : 2rem
 }
 
 .b-radius-3 {
-    border-radius: 3rem
+    border-radius : 3rem
 }
 
 .bt-radius-1 {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-top-left-radius  : 1rem;
+    border-top-right-radius : 1rem;
 }
 
 .bt-radius-2 {
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    border-top-left-radius  : 2rem;
+    border-top-right-radius : 2rem;
 }
 
 .bt-radius-3 {
-    border-top-left-radius: 3rem;
-    border-top-right-radius: 3rem;
+    border-top-left-radius  : 3rem;
+    border-top-right-radius : 3rem;
 }
 
 .bb-radius-1 {
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-bottom-left-radius  : 1rem;
+    border-bottom-right-radius : 1rem;
 }
 
 .bb-radius-2 {
-    border-bottom-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;
+    border-bottom-left-radius  : 2rem;
+    border-bottom-right-radius : 2rem;
 }
 
 .bb-radius-3 {
-    border-bottom-right-radius: 3rem;
-    border-bottom-left-radius: 3rem;
+    border-bottom-left-radius  : 3rem;
+    border-bottom-right-radius : 3rem;
 }
 
 .bl-radius-1 {
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-bottom-left-radius : 1rem;
+    border-top-left-radius    : 1rem;
 }
 
 .bl-radius-2 {
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
+    border-bottom-left-radius : 2rem;
+    border-top-left-radius    : 2rem;
 }
 
 .bl-radius-3 {
-    border-top-left-radius: 3rem;
-    border-bottom-left-radius: 3rem;
+    border-bottom-left-radius : 3rem;
+    border-top-left-radius    : 3rem;
 }
 
 .br-radius-1 {
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-right-radius : 1rem;
+    border-top-right-radius    : 1rem;
 }
 
 .br-radius-2 {
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-bottom-right-radius : 2rem;
+    border-top-right-radius    : 2rem;
 }
 
 .br-radius-3 {
-    border-top-right-radius: 3rem;
-    border-bottom-right-radius: 3rem;
+    border-bottom-right-radius : 3rem;
+    border-top-right-radius    : 3rem;
 }
 
 /*FLEX UTILITIES*/
 /*JUSTIFY CONTENT*/
 
 .justify-content-evenly {
-    justify-content: space-evenly;
+    justify-content : space-evenly;
 }
 
 
@@ -288,566 +317,566 @@ body {
 
 /* FLEX [GROW|SHRINK|BASIS] */
 .flex-0 {
-    flex: 0;
+    flex : 0;
 }
 
 .flex-1 {
-    flex: 1;
+    flex : 1;
 }
 
 .flex-2 {
-    flex: 2;
+    flex : 2;
 }
 
 .flex-3 {
-    flex: 3;
+    flex : 3;
 }
 
 .flex-4 {
-    flex: 4;
+    flex : 4;
 }
 
 .flex-5 {
-    flex: 5;
+    flex : 5;
 }
 
 .flex-6 {
-    flex: 6;
+    flex : 6;
 }
 
 .flex-7 {
-    flex: 7;
+    flex : 7;
 }
 
 .flex-8 {
-    flex: 8;
+    flex : 8;
 }
 
 .flex-9 {
-    flex: 9;
+    flex : 9;
 }
 
 .flex-10 {
-    flex: 10;
+    flex : 10;
 }
 
 /*SIZING UTILITIES*/
 /*MIN HEIGHT %*/
 .min-h-100 {
-    min-height: 100%;
+    min-height : 100%;
 }
 
 .min-h-95 {
-    min-height: 95%;
+    min-height : 95%;
 }
 
 .min-h-90 {
-    min-height: 90%;
+    min-height : 90%;
 }
 
 .min-h-85 {
-    min-height: 85%;
+    min-height : 85%;
 }
 
 .min-h-80 {
-    min-height: 80%;
+    min-height : 80%;
 }
 
 .min-h-75 {
-    min-height: 75%;
+    min-height : 75%;
 }
 
 .min-h-70 {
-    min-height: 70%;
+    min-height : 70%;
 }
 
 .min-h-66 {
-    min-height: 66%;
+    min-height : 66%;
 }
 
 .min-h-65 {
-    min-height: 65%;
+    min-height : 65%;
 }
 
 .min-h-60 {
-    min-height: 60%;
+    min-height : 60%;
 }
 
 .min-h-50 {
-    min-height: 50%;
+    min-height : 50%;
 }
 
 .min-h-45 {
-    min-height: 45%;
+    min-height : 45%;
 }
 
 .min-h-40 {
-    min-height: 40%;
+    min-height : 40%;
 }
 
 .min-h-35 {
-    min-height: 35%;
+    min-height : 35%;
 }
 
 .min-h-33 {
-    min-height: 33%;
+    min-height : 33%;
 }
 
 .min-h-30 {
-    min-height: 30%;
+    min-height : 30%;
 }
 
 .min-h-25 {
-    min-height: 25%;
+    min-height : 25%;
 }
 
 .min-h-20 {
-    min-height: 20%;
+    min-height : 20%;
 }
 
 .min-h-15 {
-    min-height: 15%;
+    min-height : 15%;
 }
 
 .min-h-10 {
-    min-height: 10%;
+    min-height : 10%;
 }
 
 .min-h-5 {
-    min-height: 5%;
+    min-height : 5%;
 }
 
 /*MAX HEIGHT %*/
 .max-h-100 {
-    max-height: 100%;
+    max-height : 100%;
 }
 
 .max-h-95 {
-    max-height: 95%;
+    max-height : 95%;
 }
 
 .max-h-90 {
-    max-height: 90%;
+    max-height : 90%;
 }
 
 .max-h-85 {
-    max-height: 85%;
+    max-height : 85%;
 }
 
 .max-h-80 {
-    max-height: 80%;
+    max-height : 80%;
 }
 
 .max-h-75 {
-    max-height: 75%;
+    max-height : 75%;
 }
 
 .max-h-70 {
-    max-height: 70%;
+    max-height : 70%;
 }
 
 .max-h-66 {
-    max-height: 66%;
+    max-height : 66%;
 }
 
 .max-h-65 {
-    max-height: 65%;
+    max-height : 65%;
 }
 
 .max-h-60 {
-    max-height: 60%;
+    max-height : 60%;
 }
 
 .max-h-50 {
-    max-height: 50%;
+    max-height : 50%;
 }
 
 .max-h-45 {
-    max-height: 45%;
+    max-height : 45%;
 }
 
 .max-h-40 {
-    max-height: 40%;
+    max-height : 40%;
 }
 
 .max-h-35 {
-    max-height: 35%;
+    max-height : 35%;
 }
 
 .max-h-33 {
-    max-height: 33%;
+    max-height : 33%;
 }
 
 .max-h-30 {
-    max-height: 30%;
+    max-height : 30%;
 }
 
 .max-h-25 {
-    max-height: 25%;
+    max-height : 25%;
 }
 
 .max-h-20 {
-    max-height: 20%;
+    max-height : 20%;
 }
 
 .max-h-15 {
-    max-height: 15%;
+    max-height : 15%;
 }
 
 .max-h-10 {
-    max-height: 10%;
+    max-height : 10%;
 }
 
 .max-h-5 {
-    max-height: 5%;
+    max-height : 5%;
 }
 
 /*HEIGHT %*/
 .h-200 {
-    height: 200%;
+    height : 200%;
 }
 
 .h-100 {
-    height: 100%;
+    height : 100%;
 }
 
 .h-95 {
-    height: 95%;
+    height : 95%;
 }
 
 .h-90 {
-    height: 90%;
+    height : 90%;
 }
 
 .h-85 {
-    height: 85%;
+    height : 85%;
 }
 
 .h-80 {
-    height: 80%;
+    height : 80%;
 }
 
 .h-75 {
-    height: 75%;
+    height : 75%;
 }
 
 .h-70 {
-    height: 70%;
+    height : 70%;
 }
 
 .h-66 {
-    height: 66%;
+    height : 66%;
 }
 
 .h-65 {
-    height: 65%;
+    height : 65%;
 }
 
 .h-60 {
-    height: 60%;
+    height : 60%;
 }
 
 .h-50 {
-    height: 50%;
+    height : 50%;
 }
 
 .h-45 {
-    height: 45%;
+    height : 45%;
 }
 
 .h-40 {
-    height: 40%;
+    height : 40%;
 }
 
 .h-35 {
-    height: 35%;
+    height : 35%;
 }
 
 .h-33 {
-    height: 33%;
+    height : 33%;
 }
 
 .h-30 {
-    height: 30%;
+    height : 30%;
 }
 
 .h-25 {
-    height: 25%;
+    height : 25%;
 }
 
 .h-20 {
-    height: 20%;
+    height : 20%;
 }
 
 .h-15 {
-    height: 15%;
+    height : 15%;
 }
 
 .h-10 {
-    height: 10%;
+    height : 10%;
 }
 
 .h-5 {
-    height: 5%;
+    height : 5%;
 }
 
 /*WIDTH %*/
 .w-auto {
-    width: auto;
+    width : auto;
 }
 
 .w-100 {
-    width: 100%;
+    width : 100%;
 }
 
 .w-95 {
-    width: 95%;
+    width : 95%;
 }
 
 .w-90 {
-    width: 90%;
+    width : 90%;
 }
 
 .w-85 {
-    width: 85%;
+    width : 85%;
 }
 
 .w-80 {
-    width: 80%;
+    width : 80%;
 }
 
 .w-75 {
-    width: 75%;
+    width : 75%;
 }
 
 .w-70 {
-    width: 70%;
+    width : 70%;
 }
 
 .w-66 {
-    width: 66%;
+    width : 66%;
 }
 
 .w-65 {
-    width: 65%;
+    width : 65%;
 }
 
 .w-60 {
-    width: 60%;
+    width : 60%;
 }
 
 .w-50 {
-    width: 50%;
+    width : 50%;
 }
 
 .w-45 {
-    width: 45%;
+    width : 45%;
 }
 
 .w-40 {
-    width: 40%;
+    width : 40%;
 }
 
 .w-35 {
-    width: 35%;
+    width : 35%;
 }
 
 .w-33 {
-    width: 33%;
+    width : 33%;
 }
 
 .w-30 {
-    width: 30%;
+    width : 30%;
 }
 
 .w-25 {
-    width: 25%;
+    width : 25%;
 }
 
 .w-20 {
-    width: 20%;
+    width : 20%;
 }
 
 .w-15 {
-    width: 15%;
+    width : 15%;
 }
 
 .w-10 {
-    width: 10%;
+    width : 10%;
 }
 
 .w-5 {
-    width: 5%;
+    width : 5%;
 }
 
 /*HEIGHT VH*/
 .vh-100 {
-    height: 100vh;
+    height : 100vh;
 }
 
 .vh-95 {
-    height: 95vh;
+    height : 95vh;
 }
 
 .vh-90 {
-    height: 90vh;
+    height : 90vh;
 }
 
 .vh-85 {
-    height: 85vh;
+    height : 85vh;
 }
 
 .vh-80 {
-    height: 80vh;
+    height : 80vh;
 }
 
 .vh-75 {
-    height: 75vh;
+    height : 75vh;
 }
 
 .vh-70 {
-    height: 70vh;
+    height : 70vh;
 }
 
 .vh-66 {
-    height: 66vh;
+    height : 66vh;
 }
 
 .vh-65 {
-    height: 65vh;
+    height : 65vh;
 }
 
 .vh-60 {
-    height: 60vh;
+    height : 60vh;
 }
 
 .vh-50 {
-    height: 50vh;
+    height : 50vh;
 }
 
 .vh-45 {
-    height: 45vh;
+    height : 45vh;
 }
 
 .vh-40 {
-    height: 40vh;
+    height : 40vh;
 }
 
 .vh-35 {
-    height: 35vh;
+    height : 35vh;
 }
 
 .vh-33 {
-    height: 33vh;
+    height : 33vh;
 }
 
 .vh-30 {
-    height: 30vh;
+    height : 30vh;
 }
 
 .vh-25 {
-    height: 25vh;
+    height : 25vh;
 }
 
 .vh-20 {
-    height: 20vh;
+    height : 20vh;
 }
 
 .vh-15 {
-    height: 15vh;
+    height : 15vh;
 }
 
 .vh-10 {
-    height: 10vh;
+    height : 10vh;
 }
 
 .vh-5 {
-    height: 5vh;
+    height : 5vh;
 }
 
 /*WIDTH VW*/
 .vw-100 {
-    width: 100vw;
+    width : 100vw;
 }
 
 .vw-95 {
-    width: 95vw;
+    width : 95vw;
 }
 
 .vw-90 {
-    width: 90vw;
+    width : 90vw;
 }
 
 .vw-85 {
-    width: 85vw;
+    width : 85vw;
 }
 
 .vw-80 {
-    width: 80vw;
+    width : 80vw;
 }
 
 .vw-75 {
-    width: 75vw;
+    width : 75vw;
 }
 
 .vw-70 {
-    width: 70vw;
+    width : 70vw;
 }
 
 .vw-66 {
-    width: 66vw;
+    width : 66vw;
 }
 
 .vw-65 {
-    width: 65vw;
+    width : 65vw;
 }
 
 .vw-60 {
-    width: 60vw;
+    width : 60vw;
 }
 
 .vw-50 {
-    width: 50vw;
+    width : 50vw;
 }
 
 .vw-45 {
-    width: 45vw;
+    width : 45vw;
 }
 
 .vw-40 {
-    width: 40vw;
+    width : 40vw;
 }
 
 .vw-35 {
-    width: 35vw;
+    width : 35vw;
 }
 
 .vw-33 {
-    width: 33vw;
+    width : 33vw;
 }
 
 .vw-30 {
-    width: 30vw;
+    width : 30vw;
 }
 
 .vw-25 {
-    width: 25vw;
+    width : 25vw;
 }
 
 .vw-20 {
-    width: 20vw;
+    width : 20vw;
 }
 
 .vw-15 {
-    width: 15vw;
+    width : 15vw;
 }
 
 .vw-10 {
-    width: 10vw;
+    width : 10vw;
 }
 
 .vw-5 {
-    width: 5vw;
+    width : 5vw;
 }
 
 /*SPACING UTILITIES*/
@@ -857,19 +886,19 @@ body {
 
 /*TRANSFORM REDUCE OR SCALE*/
 .transform-scale-50 {
-    transform: scale(.5);
+    transform : scale(.5);
 }
 
 .transform-scale-150 {
-    transform: scale(.75);
+    transform : scale(.75);
 }
 
 .transform-scale-125 {
-    transform: scale(1.25);
+    transform : scale(1.25);
 }
 
 .transform-scale-150 {
-    transform: scale(1.5);
+    transform : scale(1.5);
 }
 
 /*POSITIONING UTILITIES*/
@@ -881,74 +910,78 @@ body {
 /*ABSOLUTE OR RELATIVE*/
 
 /*Z-INDEX*/
+.z-0 {
+    z-index : 0;
+}
+
 .z-10 {
-    z-index: 10;
+    z-index : 10;
 }
 
 .z-20 {
-    z-index: 20;
+    z-index : 20;
 }
 
 .z-40 {
-    z-index: 40;
+    z-index : 40;
 }
 
 .z-50 {
-    z-index: 50;
+    z-index : 50;
 }
 
 .z-60 {
-    z-index: 60;
+    z-index : 60;
 }
 
 .z-70 {
-    z-index: 70;
+    z-index : 70;
 }
 
 .z-80 {
-    z-index: 80;
+    z-index : 80;
 }
 
 .z-90 {
-    z-index: 90;
+    z-index : 90;
 }
 
 .z-100 {
-    z-index: 100;
+    z-index : 100;
 }
 
 /*ANIMATION UTILITIES*/
 .hover-scale:hover {
-    transform: scale(1.1);
-    transition: .25s;
+    transform  : scale(1.1);
+    transition : .25s;
 }
 
 .hover-rotate-left:hover {
-    transform: rotate(-5deg);
-    cursor: pointer;
-    transition: 1s;
+    cursor     : pointer;
+    transform  : rotate(-5deg);
+    transition : 1s;
 }
 
 .hover-rotate-right:hover {
-    transform: rotate(5deg);
-    cursor: pointer;
-    transition: 1s;
+    cursor     : pointer;
+    transform  : rotate(5deg);
+    transition : 1s;
 }
 
 .hover-translate-bottom-top:hover {
-    transform: translateY(-.5rem);
+    transform : translateY(-.5rem);
 }
 
 .hover-translate-top-bottom:hover {
-    transform: translateY(.5rem);
+    transform : translateY(.5rem);
 }
 
 .hover-translate-left-right:hover {
-    transform: translateX(-.5rem);
+    transform : translateX(-.5rem);
 }
 
 .hover-translate-right-left:hover {
-    transform: translateX(.5rem);
+    transform : translateX(.5rem);
 }
 
 /* CARDS */
