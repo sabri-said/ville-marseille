@@ -11,8 +11,8 @@
 }
 
 .bg-filter:hover {
-  filter: grayscale();
-  flex: 6;
+  filter: grayscale(1);
+  flex: 10;
 }
 
 .bg-museum-mucem {
@@ -35,7 +35,7 @@
   background-image: url("../images/museum_vieille_charite.jpg");
 }
 
-h1 {
+div.col.bg.bg-filter h1 {
   text-transform: uppercase;
   font-weight: 700;
   color: var(--light);
